@@ -41,7 +41,7 @@
     content: "{{ binaries }}"
   when: is_test is defined and is_test == True
 
-- name: Ensure {{ tmp_dir }} is deleted
+- name: Ensure {{ temp_dir }} is deleted
   file:
     path: "{{ temp_dir }}"
     state: absent
